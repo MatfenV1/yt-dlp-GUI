@@ -64,6 +64,14 @@ namespace WpfYoutube_dl
                         sw.WriteLine("youtube-dl " + youtube_link);
                     }
                 }
+                else if (rdbtnMp3Thumbnail.IsChecked == true)
+                {
+                    if (sw.BaseStream.CanWrite)
+                    {
+                        sw.WriteLine(@"cd " + doelmapPad);
+                        sw.WriteLine("youtube-dl  --extract-audio --audio-format mp3 --write-thumbnail " + youtube_link);
+                    }
+                }
 
             }
         }
