@@ -1,2 +1,2 @@
-# WpfYoutube-dl
+# WpfYt-dlp
 Still a work in progress...
