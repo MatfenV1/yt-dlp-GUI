@@ -8,16 +8,18 @@
         Title="Youtube-dl GUI" Height="371" Width="873">
     <Grid>
         <Label Content="Youtube link:" HorizontalAlignment="Left" Height="34" Margin="12,78,0,0" VerticalAlignment="Top" Width="127" FontSize="20"/>
-        <TextBox x:Name="txtYt_link" HorizontalAlignment="Left" Margin="139,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="684" Height="34" FontSize="20"/>
-        <Button x:Name="btnDownload" Content="Download" HorizontalAlignment="Left" Margin="28,268,0,0" VerticalAlignment="Top" FontSize="20" Height="50" Width="137" Click="btnDownload_Click" Background="#FFFF1D1D"/>
-        <Label Content="Mathias' Youtube downloader GUI" HorizontalAlignment="Left" Height="34" Margin="28,25,0,0" VerticalAlignment="Top" Width="316" FontSize="20"/>
-        <RadioButton x:Name="rdbtnMp3" Content="MP3" HorizontalAlignment="Left" Height="23" Margin="103,123,0,0" VerticalAlignment="Top" Width="72" FontSize="20" GroupName="formats"/>
-        <RadioButton x:Name="rdbtnMp4" Content="MP4" HorizontalAlignment="Left" Height="23" Margin="103,151,0,0" VerticalAlignment="Top" Width="72" FontSize="20" GroupName="formats"/>
+        <TextBox x:Name="txtYt_link" HorizontalAlignment="Left" Margin="139,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="537" Height="32" FontSize="20"/>
+        <Button x:Name="btnDownload" Content="Download" HorizontalAlignment="Center" Margin="0,275,0,0" VerticalAlignment="Top" FontSize="20" Height="50" Width="291" Click="btnDownload_Click" Background="#FFFF1D1D"/>
+        <Label Content="Youtube downloader GUI" HorizontalAlignment="Left" Height="34" Margin="28,25,0,0" VerticalAlignment="Top" Width="316" FontSize="20"/>
+        <RadioButton x:Name="rdbtnMp3" Content="MP3" HorizontalAlignment="Left" Height="24" Margin="139,122,0,0" VerticalAlignment="Top" Width="72" FontSize="20" GroupName="formats"/>
+        <RadioButton x:Name="rdbtnMp4" Content="MP4" HorizontalAlignment="Left" Height="23" Margin="139,169,0,0" VerticalAlignment="Top" Width="72" FontSize="20" GroupName="formats"/>
         <Label Content="Format:" HorizontalAlignment="Left" Height="34" Margin="12,117,0,0" VerticalAlignment="Top" Width="86" FontSize="20"/>
-        <Image HorizontalAlignment="Left" Height="165" Margin="681,160,0,0" VerticalAlignment="Top" Width="167" Source="/YouTube.png"/>
-        <Button x:Name="btnKiesmap" Content="Kies doelmap" HorizontalAlignment="Left" Margin="12,207,0,0" VerticalAlignment="Top" FontSize="20" Height="32" Width="141" Click="btnKiesmap_Click"/>
-        <TextBox x:Name="txtDoelpad" HorizontalAlignment="Left" Margin="158,207,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="518" Height="32" FontSize="20"/>
-        <RadioButton x:Name="rdbtnMp3Thumbnail" Content="MP3 met thumbnail" HorizontalAlignment="Left" Height="23" Margin="103,178,0,0" VerticalAlignment="Top" Width="197" FontSize="20" GroupName="formats"/>
+        <Image HorizontalAlignment="Left" Height="165" Margin="692,80,0,0" VerticalAlignment="Top" Width="167" Source="/YouTube.png"/>
+        <Button x:Name="btnKiesmap" Content="Kies doelmap" HorizontalAlignment="Left" Margin="10,219,0,0" VerticalAlignment="Top" FontSize="18" Height="31" Width="124" Click="btnKiesmap_Click"/>
+        <TextBox x:Name="txtDoelpad" HorizontalAlignment="Left" Margin="139,218,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="537" Height="32" FontSize="20"/>
+        <RadioButton x:Name="rdbtnMp3Thumbnail" Content="MP3 met thumbnail" HorizontalAlignment="Left" Height="23" Margin="139,146,0,0" VerticalAlignment="Top" Width="197" FontSize="20" GroupName="formats"/>
+        <Label x:Name="lblBottom" Content="By Matfen" HorizontalAlignment="Left" Height="30" Margin="791,312,0,0" VerticalAlignment="Top" Width="66"/>
+        <RadioButton x:Name="rdbtnWav" Content="WAV" HorizontalAlignment="Left" Height="24" Margin="139,192,0,0" VerticalAlignment="Top" Width="72" FontSize="20" GroupName="formats"/>
 
     </Grid>
 </Window>

@@ -54,14 +54,7 @@ namespace WpfYoutube_dl
                     if (sw.BaseStream.CanWrite)
                     {
                         sw.WriteLine(@"cd " + doelmapPad);
-                        sw.WriteLine("youtube-dl  --extract-audio --audio-format mp3 " + youtube_link);
-                    }
-                } else if (rdbtnMp4.IsChecked == true)
-                {
-                    if (sw.BaseStream.CanWrite)
-                    {
-                        sw.WriteLine(@"cd " + doelmapPad);
-                        sw.WriteLine("youtube-dl " + youtube_link);
+                        sw.WriteLine("yt-dlp  --extract-audio --audio-format mp3 " + youtube_link);
                     }
                 }
                 else if (rdbtnMp3Thumbnail.IsChecked == true)
@@ -69,7 +62,23 @@ namespace WpfYoutube_dl
                     if (sw.BaseStream.CanWrite)
                     {
                         sw.WriteLine(@"cd " + doelmapPad);
-                        sw.WriteLine("youtube-dl  --extract-audio --audio-format mp3 --write-thumbnail " + youtube_link);
+                        sw.WriteLine("yt-dlp  --extract-audio --audio-format mp3 --write-thumbnail " + youtube_link);
+                    }
+                }
+                else if (rdbtnMp4.IsChecked == true)
+                {
+                    if (sw.BaseStream.CanWrite)
+                    {
+                        sw.WriteLine(@"cd " + doelmapPad);
+                        sw.WriteLine($"yt-dlp -S res,ext:mp4:m4a --recode mp4 {youtube_link}");
+                    }
+                }
+                else if (rdbtnWav.IsChecked == true)
+                {
+                    if (sw.BaseStream.CanWrite)
+                    {
+                        sw.WriteLine(@"cd " + doelmapPad);
+                        sw.WriteLine("yt-dlp  --extract-audio --audio-format wav " + youtube_link);
                     }
                 }
 
